@@ -1,0 +1,252 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans+Caption);
+/* Geral */
+body{
+    font-family: 'PT Sans Caption';
+    margin: 0px;
+}
+h1{
+font-weight: normal;
+}
+/* CABEÇALHO */
+header {
+    border-bottom: 1px solid rgba(217, 217, 217, 0.56);
+    height: 100px;
+}
+header ul{
+    text-align: center;
+    padding: 10px;
+    list-style: none;
+    margin-top: -30px;
+}
+header li{
+    display: inline;   
+    margin-left: 20px;
+}
+header li a {
+    text-decoration: none;
+    font-size: 25px;
+    color:#318FE8;
+    transition: color .5s;
+    padding-bottom: 13px;
+    border-bottom: 3px solid #318FE8;
+}
+ li a:hover{
+     color: #4f556d;   
+     border-bottom: 3px solid #4f556d;
+}
+div.image-left{
+    margin-top: 50px;  
+    width: 20px;
+    height: 20px;
+}
+div.image-left span{
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s;
+}
+div.image-left img{
+    width: 80px;
+    height: 80px;
+}
+div.image-left:hover span{
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    margin-top: -162px;
+}
+/* CONTEÚDO */
+
+/*data*/
+.date-style {
+    color: rgba(186, 186, 186, 0.8);
+    font-size: 13px;
+    padding: 0px;
+    width: 720px;
+    text-align: right;
+    padding-top: 10px;
+    position: absolute;
+}
+
+/* FORMULARIO 1 - INSERÇÃO:*/
+p{
+    padding: 10px;
+    color: #5F5F5F;
+}
+div#container{
+    float: left;
+    width: 700px;
+    text-indent: 50px;
+    padding: 20px;
+    border-left: 1px solid rgba(217, 217, 217, 0.56);
+}
+div#container h1{
+    text-align: center;
+    font-weight: normal;
+    color: #4f556d;
+}
+/* PAINEL DE CONTROLE */
+section{
+    width: 400px;
+    margin: auto;
+}
+
+div#adicionar, #editar{
+    width: 150px;
+    height: 150px;
+    border: 1px solid #94afe2;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2.4em;
+    font-size: 20px;
+    transition: 0.5s ease-in;
+}
+div span{
+    position: relative;
+    top: 32%;
+}
+.inline{
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 30%;
+    transition: opacity .5s; /* Desativado pelo JS quando clicado */
+}
+div#adicionar:hover, #editar:hover{
+    background-color: #5777a2; 
+    color: white;
+    width: 170px;
+    height: 170px;
+    transition: 0.5s ease-out;
+    
+}
+section a{ text-decoration: none; color: #94afe2;}
+/* FORMULARIO DE INSERÇÃO */
+
+section#inserir{
+    width: 45%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 2s;
+}
+section#inserir form{
+    width: 607px;
+    border: 1px solid #94afe2;
+    padding:10px;
+    border-radius: 2%;
+}
+section#inserir form textarea{
+    width: 600px;
+    height: 300px;
+    border: 1px solid #94afe2;
+}
+section#inserir form textarea, input{ margin-top: 10px;}
+input#tituloId{
+    width: 400px;
+    height: 30px;
+    border: 1px solid #94afe2;
+}
+section#inserir label{ font-size: 20px; color: #4f556d}
+input#sendId{
+    height: 30px;
+    width: 100px;
+    margin-left: 42.5%;
+    background-color: white;
+    border: 1px solid #94afe2;
+    transition: background-color .5s;
+}
+input#sendId:hover{
+    background-color: #5777a2;
+    color: white;
+}
+h2{ /* CADASTRADO COM SUCESSO */
+    text-align: center;
+    color: cadetblue;
+}
+/* FORMULÁRIO 2 - EDIÇÃO */
+
+
+section#update{
+    width: 45%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 2s;
+    margin-top: -900px;
+}
+section#update form{
+    width: 607px;
+    border: 1px solid #94afe2;
+    padding:10px;
+   
+}
+section#update form textarea{
+    width: 600px;
+    height: 300px;
+    border: 1px solid #94afe2;
+}
+section#update form textarea, input{ margin-top: 10px;}
+input#tituloId{
+    width: 400px;
+    height: 30px;
+    border: 1px solid #94afe2;
+}
+section#update label{ font-size: 20px; color: #4f556d}
+input#sendId{
+    height: 30px;
+    width: 100px;
+    margin-left: 42.5%;
+    background-color: white;
+    border: 1px solid #94afe2;
+    transition: background-color .5s;
+}
+input#sendId:hover{
+    background-color: #5777a2;
+    color: white;
+}
+/* TITULOS PARA SELECIONAR PARA EDITAR */
+section#titulos-section{ /* secao que vai aparecer ao clique do editar */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 2s;
+    width: 450px;
+    text-align: center;
+}
+section#titulos-section ul{
+    list-style:none;
+}
+section#titulos-section li{
+    padding-top: 20px;
+    padding-right: 30px;
+}
+/* BARRA DE ANOTAÇÕES */
+
+section#reference{
+    float: left;
+    width: 300px;
+    padding-left: 20px;
+    font-size: 18px;
+}
+section#reference div{
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    padding-top: 10px;
+}
+section#reference a:hover{
+    color: #4f556d;
+    text-decoration: underline;
+}
+
+/* RODAPÉ  */
+footer{
+      height: 100px;
+      text-align: center;
+      border-top: 1px solid #DED7D7;
+      background-color: #f3f3f3;
+      float: left;
+      padding: 10px;
+      margin-left: 17px;
+}
+footer #info{
+    color: #9C9999;
+    font-family: 'Source Sans Pro';
+}
+#coracao{
+    color: red;
+}
