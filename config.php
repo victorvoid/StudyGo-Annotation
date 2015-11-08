@@ -2,7 +2,7 @@
 	define(HOST, 'localhost');
 	define(USER, 'root');
 	define(PASS, '');
-	define(DBSA, 'cursophp');
+	define(DBSA, 'bd-annotation');
 	//BASE DO SITE
 	define(BASE,'http://localhost/projetoNote-2');
 	define(SITENAME,'Projeto de anotação');
